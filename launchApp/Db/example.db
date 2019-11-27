@@ -1,0 +1,8 @@
+record(bo, "just-for-test") {
+   field(DTYP, "Launcher")
+   field(OUT , "@python your-scirpt")
+   field(VAL, "0")
+   field(ZNAM, "Name for zero")
+   field(ONAM, "Name for one")
+}
+
