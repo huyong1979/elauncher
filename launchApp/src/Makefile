@@ -28,11 +28,13 @@ scriptlaunch_DBD += devIocStats.dbd
 #scriptlaunch_DBD += busySupport.dbd
 scriptlaunch_DBD += system.dbd
 scriptlaunch_DBD += caPutLog.dbd
+scriptlaunch_DBD += reccaster.dbd
 
 scriptlaunch_LIBS += elaunch
 scriptlaunch_LIBS += autosave devIocStats
 #scriptlaunch_LIBS += autosave devIocStats calc sscan busy asyn
 scriptlaunch_LIBS += caPutLog
+scriptlaunch_LIBS += reccaster
 
 # launch_registerRecordDeviceDriver.cpp derives from launch.dbd
 scriptlaunch_SRCS += scriptlaunch_registerRecordDeviceDriver.cpp
