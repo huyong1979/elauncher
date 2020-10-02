@@ -18,6 +18,8 @@ elaunch_SRCS += aSubOperations.c
 elaunch_SRCS += mail.c
 #aSubOperations2.c is copied from opInject
 elaunch_SRCS += aSubOperations2.c
+#vacSubs.c is copied from VacMerger
+elaunch_SRCS += vacSubs.c
 
 #=============================
 # Build the IOC application
@@ -41,6 +43,7 @@ scriptlaunch_DBD += reccaster.dbd
 scriptlaunch_DBD += aSubOperations.dbd
 scriptlaunch_DBD += mail.dbd
 scriptlaunch_DBD += aSubOperations2.dbd
+scriptlaunch_DBD += vacSubs.dbd
 
 scriptlaunch_LIBS += elaunch
 scriptlaunch_LIBS += autosave devIocStats
