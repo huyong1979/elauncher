@@ -9,6 +9,7 @@ include $(TOP)/configure/CONFIG
 LIBRARY_IOC = elaunch
 DBD += elaunchSupport.dbd
 
+#launcher.c: device support for Launcher
 elaunch_SRCS += launcher.c
 
 #the following .c files are not related to elaunch device support
