@@ -9,3 +9,7 @@ epicsEnvSet("EPICS_CA_ADDR_LIST", "10.0.153.255")
 
 # verify Python version
 system("python --version")
+
+# Load record instances for CSS/reccaster, iocAdminSoft/Reboot
+dbLoadRecords("$(EPICS_BASE)/db/reccaster.db", "P=OP-CT{IOC:$(IOCNAME)}RecSync")
+dbLoadRecords("$(EPICS_BASE)/db/iocAdminSoft.db", "IOC=OP-CT{IOC:$(IOCNAME)}")
