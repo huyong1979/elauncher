@@ -12,16 +12,6 @@ DBD += elaunchSupport.dbd
 #launcher.c: device support for Launcher
 elaunch_SRCS += launcher.c
 
-#the following .c files are not related to elaunch device support
-#aSubOperations.c is copied from MagnetMerger
-elaunch_SRCS += aSubOperations.c
-#mail.c is copied from messageIoc
-elaunch_SRCS += mail.c
-#aSubOperations2.c is copied from opInject
-elaunch_SRCS += aSubOperations2.c
-#vacSubs.c is copied from VacMerger
-elaunch_SRCS += vacSubs.c
-
 #=============================
 # Build the IOC application
 
@@ -32,28 +22,17 @@ DBD += scriptlaunch.dbd
 # launch.dbd will be made up from these files:
 scriptlaunch_DBD += base.dbd
 scriptlaunch_DBD += elaunchSupport.dbd
-scriptlaunch_DBD += asSupport.dbd
-scriptlaunch_DBD += devIocStats.dbd
+#scriptlaunch_DBD += asSupport.dbd
+#scriptlaunch_DBD += devIocStats.dbd
 #scriptlaunch_DBD += calcSupport.dbd
 #scriptlaunch_DBD += sscanSupport.dbd
 #scriptlaunch_DBD += busySupport.dbd
 scriptlaunch_DBD += system.dbd
-scriptlaunch_DBD += caPutLog.dbd
-scriptlaunch_DBD += reccaster.dbd
-
-scriptlaunch_DBD += aSubOperations.dbd
-scriptlaunch_DBD += mail.dbd
-scriptlaunch_DBD += aSubOperations2.dbd
-scriptlaunch_DBD += vacSubs.dbd
+#scriptlaunch_DBD += caPutLog.dbd
 
 scriptlaunch_LIBS += elaunch
-scriptlaunch_LIBS += autosave devIocStats
+#scriptlaunch_LIBS += autosave devIocStats
 #scriptlaunch_LIBS += autosave devIocStats calc sscan busy asyn
-scriptlaunch_LIBS += caPutLog
-scriptlaunch_LIBS += reccaster
-#curl: for mail.c
-scriptlaunch_LIBS += curl
-curl_DIR = /usr/lib/x86_64-linux-gnu
 
 # launch_registerRecordDeviceDriver.cpp derives from launch.dbd
 scriptlaunch_SRCS += scriptlaunch_registerRecordDeviceDriver.cpp
