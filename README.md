@@ -1,5 +1,3 @@
-[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/huyong1979/elauncher)
-
 Device support for easy script launcher: one can run a Python (or shell, or anything you can use in a Linux terminal) script inside an IOC through a bo record.
 
 
@@ -12,4 +10,6 @@ You may need to replace the first line with "#!bin/linux-x86/elauncher" in "st.c
 Type "./st.cmd" to start the IOC for a quick test.
 
 The source codes were originally developed by Michael Davidsaver.
+
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/huyong1979/elauncher)
 
