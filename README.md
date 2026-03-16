@@ -1,3 +1,5 @@
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/huyong1979/elauncher)
+
 Device support for easy script launcher: one can run a Python (or shell, or anything you can use in a Linux terminal) script inside an IOC through a bo record.
 
 
